@@ -60,19 +60,26 @@ wheatley-linux/
 
 ## Get the ISO
 
-Two ways:
+**Pick ONE of the two options below — you don't need both.**
 
-### 1. Download a prebuilt ISO
+- **Just want to run it?** → Option A (download).
+- **Want to build it from source / change something?** → Option B (build).
+
+### Option A — Download a prebuilt ISO (easiest)
 
 Grab the latest `wheatley-runit-*-x86_64.iso` from the
-**[Releases page](https://github.com/Vifuddyxg/wheatley-linux/releases)**
-(if a release has been published).
+**[Releases page](https://github.com/Vifuddyxg/wheatley-linux/releases)**, then
+jump to [Putting the ISO on a USB stick](#putting-the-iso-on-a-usb-stick).
+That's it — no build needed.
 
-### 2. Build it yourself
+*(If there's no release yet, use Option B.)*
 
-You need **Docker** (the build runs in an Artix container, so it works from
-any distro — including a Gentoo host). The image needs `--privileged` for loop
-devices / squashfs; `build.sh` handles that.
+### Option B — Build it yourself
+
+Only needed if you want to compile the ISO from source. You need **Docker**
+(the build runs in an Artix container, so it works from any distro — including a
+Gentoo host). The image needs `--privileged` for loop devices / squashfs;
+`build.sh` handles that.
 
 ```sh
 git clone https://github.com/Vifuddyxg/wheatley-linux.git

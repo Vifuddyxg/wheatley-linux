@@ -1,0 +1,20 @@
+# build output
+/out/
+# buildiso workdir (chroots, ~GBs, partly root-owned) + cached packages
+/.artools-work/
+/.pkgcache/
+# build logs
+*.log
+# local package repo + makepkg artifacts
+/repo/x86_64/
+packages/*/src/
+packages/*/pkg/
+packages/*/*.pkg.tar.*
+packages/*/*.tar.gz
+# pacman.conf staged next to the installer PKGBUILD by make-iso.sh (in-container)
+packages/wheatley-installer/pacman.conf
+# git clones makepkg creates from VCS sources
+packages/apeturewm/apeturewm/
+packages/atomwm/atomwm/
+# tooling
+.claude-flow/

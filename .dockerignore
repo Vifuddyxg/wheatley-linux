@@ -1,0 +1,10 @@
+out/
+.artools-work/
+.pkgcache/
+.git/
+.claude-flow/
+*.log
+repo/x86_64/
+packages/*/src/
+packages/*/pkg/
+packages/*/*.pkg.tar.*

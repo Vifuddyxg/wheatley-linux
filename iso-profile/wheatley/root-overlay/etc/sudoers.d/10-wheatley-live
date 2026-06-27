@@ -1,0 +1,2 @@
+## Wheatley live session: wheel may sudo without a password.
+%wheel ALL=(ALL) NOPASSWD: ALL
